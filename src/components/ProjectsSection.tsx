@@ -4,12 +4,15 @@ import { motion, Variants } from "framer-motion";
 
 export default function ProjectsSection() {
   return (
-    <section className="sm:h-screen  pt-44 flex flex-col gap-8 bg-neutral-900 text-neutral-50">
+    <section
+      id="projects-section"
+      className="sm:h-screen pt-44 flex flex-col gap-8 bg-neutral-900 text-neutral-50"
+    >
       <div className="flex flex-col gap-2 p-12">
         <h2 className="uppecase text-xs font-semibold tracking-wide opacity-75">
           PROJECTS
         </h2>
-        <p className="text-xl w-1/3">
+        <p className="text-xl md:w-1/3">
           A curated selection of remarkable projects that have earned their
           place here.
         </p>

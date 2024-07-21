@@ -12,3 +12,9 @@ nav {
     -webkit-backdrop-filter: blur(7px);
     -moz-backdrop-filter: blur(7px);
   }
+/* 
+  div {
+    border: red;
+    border-width: 1px;
+    border-style: dotted;
+  } */
