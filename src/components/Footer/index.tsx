@@ -1,5 +1,7 @@
 import { toast } from "sonner";
 import socials from "@/config/socials";
+import SocialMediaLink from "./SocialMediaLink";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -25,13 +27,20 @@ export default function Footer() {
                 hello@thejus.design
               </button>
             </div>
-            <div>Bengaluru, Karnataka</div>
+            <div className="flex gap-2">
+              <Image
+                src={"/icons/pin.svg"}
+                alt="Place Icon"
+                width={"20"}
+                height={"20"}
+              />
+              <div>Bengaluru, Karnataka</div>
+            </div>
           </div>
           <div className="flex flex-col gap-4 w-1/12">
-            <a>LinkedIn</a>
-            <a>Medium</a>
-            <a>Behance</a>
-            <a>Github</a>
+            {socials.map((item, index) => (
+              <SocialMediaLink key={index} social={item} />
+            ))}
           </div>
         </div>
       </div>
