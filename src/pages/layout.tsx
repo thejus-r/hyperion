@@ -3,6 +3,7 @@ import TopNav from "@/components/TopNav";
 import { outfit } from "@/utils/fonts";
 import { ReactLenis } from "lenis/react";
 import { ReactNode } from "react";
+import { Toaster } from "sonner";
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
@@ -12,6 +13,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         {children}
         <Footer />
       </main>
+      <Toaster />
     </ReactLenis>
   );
 }

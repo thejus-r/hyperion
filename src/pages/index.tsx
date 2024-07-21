@@ -4,7 +4,7 @@ import ProjectsSection from "@/components/ProjectsSection";
 
 export default function Home() {
   return (
-    <main className="sm:h-[calc(300vh+36vh)]  h-[calc(384vh+36vh)]">
+    <main>
       <HeroSection />
       <ProjectsSection />
       <ExperienceSection />
