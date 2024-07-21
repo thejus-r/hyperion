@@ -1,4 +1,5 @@
 import { toast } from "sonner";
+import socials from "@/config/socials";
 
 export default function Footer() {
   return (
