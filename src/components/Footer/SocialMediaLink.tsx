@@ -14,7 +14,7 @@ export default function SocialMediaLink(props: Props) {
         width={"20"}
         height={"20"}
       ></Image>
-      <div>{props.social.name}</div>
+      <div className="hidden md:block">{props.social.name}</div>
     </a>
   );
 }
